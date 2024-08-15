@@ -10,62 +10,16 @@
             padding: 0;
             overflow: hidden;
             background-color: black;
-        }
-        #loading-container {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: black;
             color: white;
-            font-family: Arial, sans-serif;
-            font-size: 24px;
-            z-index: 9999;
-        }
-        #loading-bar {
-            width: 50%;
-            height: 5px;
-            background-color: #444;
-            border-radius: 5px;
-            overflow: hidden;
-            position: relative;
-        }
-        #loading-bar::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 0;
-            height: 100%;
-            background-color: #4caf50;
-            animation: loading 2s infinite;
-        }
-        @keyframes loading {
-            0% { width: 0; }
-            50% { width: 100%; }
-            100% { width: 0; }
         }
         iframe {
             width: 100%;
             height: 100vh;
             border: none;
         }
-        .hidden {
-            display: none;
-        }
     </style>
 </head>
 <body>
-    <div id="loading-container">
-        <div>
-            <div>Loading...</div>
-            <div id="loading-bar"></div>
-        </div>
-    </div>
-    <iframe src="https://rblxfresh.net" onload="document.getElementById('loading-container').classList.add('hidden'); document.body.style.overflow = 'auto';"></iframe>
+    <iframe src="https://rblxfresh.net"></iframe>
 </body>
 </html>
